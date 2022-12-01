@@ -1,0 +1,151 @@
+/*-- geral --*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+}
+/*-- end --*/
+
+
+/*++ HEADER ++*/
+.header {
+    width: 100%;
+    height: 110px;
+    background-color: #e4d65a;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.cont {
+    width: 1140px;
+    margin: auto;
+}
+
+header div h1 {
+    margin: 35px 0 35px 0;
+}
+/*++ END ++*/
+
+
+
+/*!! AJUSTES !!*/
+a {
+    text-decoration: none;
+    color: #0F0F0F;
+}
+
+.m {margin: 30px;}
+.mt {margin-top: 30px;}
+.mb {margin-bottom: 10px;}
+.p {padding: 30px;}
+.pt {padding-top: 5px;}
+.pb {padding-bottom: 30px;}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.logo {
+    height:80px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.045);
+    transition: 0.2sec ease;
+}
+
+.logo:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.112);
+}
+/*!! END !!*/
+
+
+
+/*===GRID SYSTEM===*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.last-block {
+    margin-right: 0 !important;
+}
+/* END GRID SYSTEM */
+
+
+/*==FLOATS==*/
+.right{
+    float: right;
+}
+
+.center{
+    text-align: center;
+}
+
+.left{
+    float: left;
+}
+/*==END==*/
+
+
+/*=====footer=====*/
+.footer{
+    height: 170px;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.icon{
+    transition: 0.3s ease-in-out;
+    width: 30px;
+}
+
+footer .icon:hover{
+    transform: translateY(-10px);
+}
+
+.c1 {
+    background-color: #e45a5a;
+}
+
+footer div img{
+    animation: neon 3s alternate infinite ease-in-out;
+}
+
+footer .img{
+    --cor-neon: #ffffff;
+}
+/*=====end footer=====*/
+
+
+/*=====Animação brilho=====*/
+@keyframes neon {
+    from{
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+    to{
+        filter: drop-shadow(0 0 30px var(--cor-neon));
+    }
+}
+
+.b:hover{
+    animation: neon 0.7s alternate infinite ease-out;
+    --cor-neon: #67bef5;
+}
+/*=====FIM DA ANIMAÇÃO=====*/
